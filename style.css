@@ -1,0 +1,155 @@
+.section-1{
+    /* background: grey; */
+    padding-left: 10%;
+    padding-right:10% ;
+}
+
+.button {
+    background-color: #c4c4c4;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 26px;
+  }
+
+nav{
+    background-color: white;
+}
+.section-1{
+    margin-top: 7%;
+    padding: 0 0 0 20%;
+}
+
+.facts{
+    /* margin-left: 15px; */
+}
+.support{
+    color: gray;
+    width: auto;
+    font-size: small;
+}
+.time{
+    color: green;
+    font-size: small;
+
+}
+.icon{
+    width: 20%;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+.booking{
+    /* margin-top: 9%; */
+    border-radius: 30px;
+    display: inline-flex;
+}
+
+.coupe{
+    padding-top:10px;
+}
+/* .coupe :hover{ */
+    /* background-color: yellowgreen; */
+    /* display: inline-flex; */
+    
+
+.count{
+    margin-left: 65%;
+    text-align: right;
+    background-color: rgb(241, 241, 241);
+    border-radius: 70%;
+    padding: 10px;
+    color: rgb(167, 167, 167);
+}
+.topic{
+    font-weight: bolder;
+}
+.hello{
+    margin-bottom: 3%;
+    font-family: 'Raleway', sans-serif;
+
+}
+#signup{
+    background-color: green;
+    color: white;
+}
+
+#login{
+background-color: #f5efef;
+}
+
+.health{
+    background-color: WHITE;
+    height: 150px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.health-sub{
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+    font-size: 18px;
+}
+.health-section{
+    margin-top: 4%;
+    /* padding: 0 1    0 0 20%; */
+    margin-left: 20%;
+    margin-bottom: 10%;
+    /* margin-right: 44px; */
+}
+
+.main{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+    font-size: 18px;
+}
+
+.coupe :hover{
+    background-color: rgb(201, 201, 201);
+}
+
+.booking{
+    padding: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .section-1{
+        margin: 0;
+        padding: 0;
+        margin-top: 30%;
+    }
+
+    .health-section{
+        margin: 0;
+        padding: 0; 
+        margin-top: 10%;
+    }
+    .topic{
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+    .coupe{
+        padding-top: 0;
+    }
+    .topic{
+        padding-bottom: 0;
+    }
+    #virtual{
+        margin-top: 10%;
+    }
+    #health{
+        font-size: large;
+        font-weight: bolder;
+    }
+    #health-cards{
+        margin-bottom: 30px;
+    }
+  }
