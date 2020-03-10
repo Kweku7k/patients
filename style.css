@@ -119,6 +119,11 @@ background-color: #f5efef;
     padding: 20px;
 }
 
+.options{
+    padding: 30px;
+}
+
+
 @media (min-width: 320px) and (max-width: 480px) {
   
     .section-1{

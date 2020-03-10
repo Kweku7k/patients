@@ -1,0 +1,25 @@
+#search{
+    background-color: #e4e4e4;
+}
+
+.options{
+    padding: 30px;
+}
+
+#dynamic{
+    background-color: white;
+    border: 1px solid #e4e4e4;
+}
+
+.button {
+    background-color: #c4c4c4;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 26px;
+  }
