@@ -9,6 +9,7 @@
 #dynamic{
     background-color: white;
     border: 1px solid #e4e4e4;
+    color: black;
 }
 
 .button {
@@ -23,3 +24,132 @@
     cursor: pointer;
     border-radius: 26px;
   }
+
+
+  .hospital{
+    width: 100%;
+    border-radius: 30px;
+    background-image: url(Montfort_Hospital_Aerial_View.jpeg);
+    /* background-color: black; */
+    background-attachment: cover;
+    height: 250px;
+    padding: 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+#bottom-text{
+position: absolute;
+bottom: 10px;
+right: 50px;
+}
+
+#one{
+    margin-top: 0;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+}
+.pic {
+    display: inline-block;
+    width: 20%;
+}
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.icons{
+display: inline-flex;
+margin-left: auto;
+text-align: right;
+padding-right: auto;
+/* width: 15%; */
+
+}
+.title{
+    display: inline-flex;
+    /* padding-right: auto; */
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgb(189, 185, 185); */
+    /* border-radius: 10px; */
+    border-bottom: 1px solid rgb(209, 209, 209);
+    font-size: large;
+
+}
+
+.appointment {
+    background-color: rgb(0, 128, 38);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 95%;
+    text-align: center;
+    margin:auto;
+  }
+
+  #book{
+font-size: large;
+  }
+  #when{
+font-size: small;
+padding-top: 0;
+  }
+
+.place{
+    font-weight: bold;
+}
+.specials{
+
+}
+.stats{
+
+}
+.top{
+    padding: 10px;
+    padding-top:35px;
+
+}
+
+#car{
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.header{
+    font-weight: lighter;
+    color: rgb(119, 119, 119);
+}
+.body{
+color: black;
+}
+
+.footer{
+    margin:auto;
+    display: inline-flex;
+    width: 30%;
+}
+
+.svg{
+    width: 10%;
+}
+

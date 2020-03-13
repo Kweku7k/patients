@@ -16,7 +16,7 @@
 </head>
 
 <body style="background-color:#f9f9f9">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-no">
 
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
     <!-- <span class="navbar-toggler-icon"></span> -->
@@ -24,13 +24,40 @@
     <a href="#"> <button class="button" id="login">Login</button></a>
     <img src="Serenity logo.png" style="margin: auto;">
     <!-- <h5 style="margin: auto;">Senseble Health</h5> -->
-    <button class="button" style="margin-right: 0;" id="signup">Search</button>
+    <button class="button" style="margin-right: 0;" id="signup">Signup</button>
     </div>
   </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes">
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+    <img src="Serenity logo.png" style="margin-right: auto;">
+    <!-- <h5 style="margin: auto;">Senseble Health</h5> -->
+    <button class="button" style="margin-right: 0;" id="signup">Signup</button>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+
   <section class="section-1">
 
     <div class="container">
-      <h4 class="hello"><span style="color: gray;">Morning. </span>How can we help you?</h4>
+      <h4 class="hello"><span style="color: gray;">Afternoon. </span>How can we help you?</h4>
       <div class="row">
         <div class="col-md-4">
           <h6 class="topic" style="font-weight: bold;">Book In-Clinic Visits</h6>
@@ -71,8 +98,8 @@
                 <i class="fas fa-couch fa-2x"></i>
               </div>
               <div class="facts">
-                <h5 class="main">Orthopedics</h5>
-                <!-- <h6 class="support">Ideal for immediate medical attention</h6> -->
+                <h5 class="main">Checkup</h5>
+                <h6 class="support">Get a quick instant checkup</h6>
                 <!-- <h6 class="time">Today at 5:00pm</h6> -->
               </div>
             </div>
@@ -147,15 +174,16 @@
     <div class="container">
       <h4 class="hello" id="health" style="font-weight: bold;">My Health </h4>
       <div class="row">
-        <div id ="health-cards" class="col-md-3">
+        <div onclick="dynamic(event)" id ="health-cards" class="col-md-3">
+          <!-- <a href="dynamical.html"> -->
           <div class="health">
             <!-- <i class="fab fa-joomla fa-3x"></i> -->
             <img src="https://img.icons8.com/color/48/000000/calendar.png"><span class="count">0</span>
             <h4 class="health-sub">Appointments</h4>
           </div>
+        
         </div>
-
-        <div id ="health-cards" class="col-md-3">
+        <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
           <div class="health">
             <!-- <i class="fab fa-joomla fa-3x"></i> -->
             <img src="https://img.icons8.com/color/48/000000/heart-with-pulse.png"><span class="count">0</span>
@@ -164,7 +192,7 @@
           </div>
         </div>
 
-        <div id ="health-cards" class="col-md-3">
+        <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
           <div class="health">
             <img src="https://img.icons8.com/color/48/000000/supplement-bottle.png"><span class="count">0</span>
 
@@ -175,37 +203,104 @@
 
       <!-- -----------end----------- -->
       <div  class="row" style="margin-top: 10px;">
-        <div id ="health-cards" class="col-md-3">
+        <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
           <div class="health">
             <img src="https://img.icons8.com/color/48/000000/thin-test-tube.png"><span class="count">0</span>
 
-            <h4 class="health-sub">Appointments</h4>
+            <h4 class="health-sub">Lab Results</h4>
           </div>
         </div>
       <!-- </div> -->
 
-        <div id ="health-cards" class="col-md-3">
+        <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
           <div class="health">
             <img src="https://img.icons8.com/color/48/000000/documents.png"><span class="count">0</span>
-            <h4 class="health-sub">Vitals</h4>
+            <h4 class="health-sub">Documents</h4>
           </div>
         </div>
 
-        <div id ="health-cards" class="col-md-3">
+        <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
           <div class="health">
             <img src="https://img.icons8.com/color/48/000000/medical-heart .png"><span class="count">0</span>
-            <h4 class="health-sub">Prescriptions</h4>
+            <h4 class="health-sub"> Medical Images</h4>
           </div>
         </div>
       </div>
 
-    </div>
-    </div>
+   
 
     <!-- -----------end----------- -->
 
+    <div  class="row" style="margin-top: 10px;">
+      <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
+        <div class="health">
+          <!-- <img src="https://img.icons8.com/nolan/48/connected.png"/><span class="count">0</span> -->
+          <img style="width: 20%;" src="noun_Smart Watch_2441119.svg "/><span class="count">0</span>
+
+          <h4 class="health-sub">Connected Devices</h4>
+        </div>
+      </div>
+    <!-- </div> -->
+
+      <div id ="health-cards" onclick="dynamic(event)" class="col-md-3">
+        <div class="health"  onclick="dynamic(event)">
+          <img  onclick="dynamic(event)"src="https://img.icons8.com/cotton/48/000000/medical-history.png"/><span class="count">0</span>
+          <h4  onclick="dynamic(event)"class="health-sub">Medical History</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+    </div>
+
+  </div>
+</div>
+
+  
+
+  <!-- -----------end----------- -->
+
 
   </section>
+
+
+
+  <section id="please" class="dynamic-page" style="display:none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <!-- </button> -->
+      <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+      <i onclick="closepage()" class="fas fa-chevron-left fa-2x"></i>
+      <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
+      <h5 class="option" style="margin: auto;">Connected Devices</h5>
+      <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+      </div>
+    </nav>
+  
+  
+  <h4 class="notify">No information available</h4>
+  
+  </section>
+
+  <script>
+    function dynamic(event){
+      button = event.target;
+      name = button.getElementsByClassName("health-sub")[0].innerHTML;
+      console.log(name)
+      console.log(button)
+      document.getElementsByClassName("option")[0].innerHTML = name; 
+      
+      document.getElementsByClassName("dynamic-page")[0].style.display = "block";
+      // $("#please").fadeIn(3000);
+    }
+
+    function closepage(){
+      document.getElementsByClassName("dynamic-page")[0].style.display = "none";
+    }
+    </script>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

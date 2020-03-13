@@ -36,13 +36,49 @@
           <div class="col-md-6">
               <div class="container">
                 <div class="options">  
-                    <button id="dynamic" class="button">Primary</button>
-                    <button id="dynamic" class="button">Primary</button>
-                    <button id="dynamic" class="button">Primary</button>
+                    <button onclick="pick(event)" id="dynamic" class="button">Primary</button>
+                    <button onclick="pick(event)" id="dynamic" class="button">Primary</button>
+                    <button onclick="pick(event)" id="dynamic" class="button">Primary</button>
                 </div>
+                <div class="hospital" id="one">
+                 <div class="top-text">
+                   <h4>Dansoman</h4>
+                   <h6>Urgent Care</h6> 
+                  </div>
+                  <h6 id="bottom-text">7645.8miles.</h6>
+                </div>
+
+                <div class="hospital">
+                  <div class="top-text">
+                    <h4>Dansoman</h4>
+                    <h6>Urgent Care</h6>
+                   </div>
+                   <h6 id="bottom-text">7645.8miles.</h6>
+                 </div>
               </div>
-          </div>                
+
+              
+          </div> 
+          <div class="col-md-6" style="background-color: rgb(212, 212, 212);">
+
+          </div>               
       </div>
   </section>
+
+<script>
+  function pick(event){
+var button = event.target
+console.log(button)
+if (button.style.color == "black"){
+console.log("YES") 
+}
+else{
+  console.log("no")
+}
+  }
+
+</script>
 </body>
+
+
 </html>

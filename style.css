@@ -124,6 +124,15 @@ background-color: #f5efef;
 }
 
 
+.dynamic-page{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   
     .section-1{
@@ -158,3 +167,32 @@ background-color: #f5efef;
         margin-bottom: 30px;
     }
   }
+
+  .hospital{
+      width: 100%;
+      border-radius: 30px;
+      /* background-image: url(Montfort_Hospital_Aerial_View.jpeg); */
+      background-color: black;
+      height: 300px;
+
+  }
+
+  .notify{
+      font-weight: lighter;
+      font-size: small;
+      text-align: center;
+      padding-top: 20px;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+
+/* #auth-yes{
+    display: block;
+} */
+  
+
+
+#auth-no{
+    display: none;
+}
