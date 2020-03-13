@@ -133,6 +133,40 @@ background-color: #f5efef;
     right: 0;
 }
 
+.Messages{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px; */
+    /* padding: 10px 30px 10px 30px ; */
+}
+
+.send{
+    border-bottom: 1px solid rgb(134, 134, 134);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+}
+
+.pic{
+    border-radius: 50%;
+}
+.content{
+    padding-left:50px;
+    /* padding-right:10px; */
+}
+.time{
+    margin-right: 0;
+}
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
   
     .section-1{
@@ -195,4 +229,19 @@ background-color: #f5efef;
 
 #auth-no{
     display: none;
+}
+
+.active{
+    border-bottom: 3px solid turquoise;
+    color: turquoise    ;
+
+}
+
+.profile{
+    border-radius: 60%;
+    color: white;
+    background-color: turquoise ;
+    padding: 10px;
+    font-weight: bold;
+
 }

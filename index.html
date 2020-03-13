@@ -28,7 +28,7 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes" style="border-bottom:1px solid rgb(175, 175, 175);">
 
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
     <!-- <span class="navbar-toggler-icon"></span> -->
@@ -36,21 +36,16 @@
     <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
     <img src="Serenity logo.png" style="margin-right: auto;">
     <!-- <h5 style="margin: auto;">Senseble Health</h5> -->
-    <button class="button" style="margin-right: 0;" id="signup">Signup</button>
+    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link active" href="#">My Health</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item" onclick="showMessages()">
+        <a class="nav-link disabled" href="#">Messages</a>
       </li>
     </ul>
+    <div class="profile">NA</div>
     </div>
   </nav>
 
@@ -284,6 +279,44 @@
   
   </section>
 
+  <section class="Messages" style="display: none;">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes" style="border-bottom:1px solid rgb(175, 175, 175);">
+
+  
+      <img src="Serenity logo.png" style="margin-right: auto;">
+    
+      <ul class="nav justify-content-end">
+        <li class="nav-item" onclick="hideMessages()">
+          <a class="nav-link disabled" href="#">My Health</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link active" href="#">Messages</a>
+        </li>
+      </ul>
+      <div class="profile">NA</div>
+    </nav>
+    <div class="container">
+
+<div class="send row">
+  <div class="picholder" style="width: 5%; text-align: center;">
+<img class="pic" src="user.png" width="100%">
+  </div>
+  <div class="content" style="width: 80%;">
+<h4 class="content-head">Title</h4>
+<h6 class="content-body">Content in the middle</h6>
+  </div>
+  <div class="time">
+    11:00
+  </div>
+</div>
+
+
+
+
+</div>
+  </section>
+
   <script>
     function dynamic(event){
       button = event.target;
@@ -293,6 +326,18 @@
       document.getElementsByClassName("option")[0].innerHTML = name; 
       
       document.getElementsByClassName("dynamic-page")[0].style.display = "block";
+      // $("#please").fadeIn(3000);
+    }
+
+    function hideMessages(){
+      document.getElementsByClassName("Messages")[0].style.display = "none";
+
+    }
+
+    function showMessages(){
+      // button = event.target;
+      
+      document.getElementsByClassName("Messages")[0].style.display = "block";
       // $("#please").fadeIn(3000);
     }
 
