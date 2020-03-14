@@ -45,7 +45,7 @@
         <a class="nav-link disabled" href="#">Messages</a>
       </li>
     </ul>
-    <div class="profile">NA</div>
+    <div class="profile" onclick="showProfile()">NA</div>
     </div>
   </nav>
 
@@ -57,6 +57,7 @@
         <div class="col-md-4">
           <h6 class="topic" style="font-weight: bold;">Book In-Clinic Visits</h6>
           <!-- -----------start----------- -->
+          <a href="dynamic.html">
           <div class="coupe">
             <div class="booking row">
               <div class="icon">
@@ -69,6 +70,7 @@
               </div>
             </div>
           </div>
+          </a>
           <!-- -----------end----------- -->
 
           <!-- -----------start----------- -->
@@ -293,8 +295,10 @@
         <li class="nav-item" >
           <a class="nav-link active" href="#">Messages</a>
         </li>
+        <li>
+          <div class="profile" onclick="showProfile()">NA</div>
+        </li>
       </ul>
-      <div class="profile">NA</div>
     </nav>
     <div class="container">
 
@@ -302,12 +306,25 @@
   <div class="picholder" style="width: 5%; text-align: center;">
 <img class="pic" src="user.png" width="100%">
   </div>
-  <div class="content" style="width: 80%;">
-<h4 class="content-head">Title</h4>
-<h6 class="content-body">Content in the middle</h6>
+  <div class="content" style="width: 90%;">
+<h4 class="content-head">CoronaVirus Concerns</h4>
+<h6 class="content-body">Carbon Bot: I've created a case to handle your Coronavirus Concerns, and notified your team.</h6>
   </div>
   <div class="time">
-    11:00
+    <h5>10:00</h5>
+  </div>
+</div>
+
+<div class="send row">
+  <div class="picholder" style="width: 5%; text-align: center;">
+<img class="pic" src="user.png" width="100%">
+  </div>
+  <div class="content" style="width: 90%;">
+<h4 class="content-head">Prevention & Wellness</h4>
+<h6 class="content-body">Carbon Bot:Welcome to Carbon!</h6>
+  </div>
+  <div class="time">
+    <h5>10:00</h5>
   </div>
 </div>
 
@@ -316,6 +333,262 @@
 
 </div>
   </section>
+
+  <section class="me" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes" style="border-bottom:1px solid rgb(175, 175, 175);">
+
+  
+      <img src="Serenity logo.png" style="margin-right: auto;">
+    
+      <ul class="nav justify-content-end">
+        <li class="nav-item" onclick="hideMessages()">
+          <a class="nav-link disabled" href="#">My Health</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#">Messages</a>
+        </li>
+        <li>
+          <a class="nav-link active"><div class="profile">NA</div></a> 
+        </li>
+      </ul>
+    </nav>
+
+    <div class="pro row">
+      <!-- <div class="container"> -->
+      <div class="image" style="width: 5%;"> 
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png"/ style="padding-left: 30px;">  -->
+      <div class="profile">NA</div>
+      </div>
+      <div class="throw">
+        <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Nana Kweku Adumata</h4><br>
+        <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">19 years old</h4>
+      </div>
+
+    </div>
+    </div> 
+
+
+    <div class="pro row" onclick="showInsurance()">
+      <div class="wrapper">
+      <!-- <div class="image" style="width: 10%;"> -->
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
+        <i class="fas fa-user-md"></i>
+      <!-- </div> -->
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Insurances</h4>
+    </div>
+    </div>
+
+    <div class="pro row">
+      <div class="wrapper">
+      <!-- <div class="image" style="width: 10%;"> -->
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png"/ style="padding-left: 30px;">  -->
+        <i class="fas fa-file-invoice-dollar"></i>
+      <!-- </div> -->
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" onclick="showBilling()">Bills</h4>
+    </div>
+    </div>
+
+    <div class="pro row">
+      <div class="wrapper">
+      <!-- <div class="image" style="width: 10%;"> -->
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
+        <i class="fas fa-money-check-alt"></i>
+      <!-- </div> -->
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Payment</h4>
+    </div>
+    </div>
+
+    <a href="dynamic.html">
+    <div class="pro row">
+      <div class="wrapper">
+      <!-- <div class="image" style="width: 10%;"> -->
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png"> -->
+        <i class="fas fa-user-circle"></i>
+      <!-- </div> -->
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Account</h4>
+    </div>
+    </div> 
+    </a>
+
+    <div class="pro row">
+      <div class="wrapper">
+      <!-- <div class="image" style="width: 10%;"> -->
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
+      <!-- </div> -->
+      <i class="fas fa-user-injured"></i>
+
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Switch patient</h4>
+    </div>
+    </div> 
+
+    <div class="pro row">
+      <div class="wrapper">
+      <!-- <div class="image" style="width: 10%;"> -->
+        <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
+        <!-- <i class="fas fa-user-injured fa-2x"></i> -->
+        <i class="fas fa-question-circle"></i>
+      <!-- </div> -->
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Support</h4>
+    </div>
+    </div> 
+  </section>
+
+<section class="insurance" style="display: none;" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+    <i onclick="hideInsurance()" class="fas fa-chevron-left fa-2x"></i>
+    <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
+    <h5 class="option" style="margin: auto;">Primary Insurance</h5>
+    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+    </div>
+  </nav>
+
+  <div class="self-card">
+    <h4>Self Pay</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <h6>First Name</h6>
+        <h5>Nana Kweku</h5>
+        <br>
+        <h6>Date Of Birth</h6>
+        <h5>12/20/00</h5>
+        <br>
+        <h6>Plan Type</h6>
+        <h4>Other</h4>
+      </div>
+
+      <div class="col-md-6">
+        <h6>First Name</h6>
+        <h5>Nana Kweku</h5>
+        <br>
+        <h6>Date Of Birth</h6>
+        <h5>12/20/00</h5>
+      </div>
+    </div>
+  </div>
+
+  <button class="self-button">Update your insurance</button>
+</section>
+
+<section class="billing" id="modal" style="background-color: rgb(230, 230, 230); display:none;" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+    <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
+    <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
+    <h5 class="option" style="margin: auto;">Primary Insurance</h5>
+    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+    </div>
+  </nav>
+   <!-- <div class="container" > -->
+    <ul class="nav nav-pills"  style="background-color:white  ;">
+      <!-- <li class="active"><a data-toggle="pill" href="#home">Home</a></li> -->
+      <li class="toogles"><a data-toggle="pill" href="#menu1">DUE</a></li>
+      <li class="toogles"><a data-toggle="pill" href="#menu2">PAID</a></li>
+      <li class="toogles"><a data-toggle="pill" href="#menu3">SENT/WAITING</a></li>
+    </ul>
+    <div class="container">
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h3 class="toogle-support">No bills due</h3>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3 class="toogle-support" style="text-align: center; border: none;">No bills paid</h3>
+        <!-- <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <h3 class="toogle-support">No bills sent/waiting</h3>
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <h3 class="toogle-support">Menu 3</h3>
+        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<section class=Payment" id="modal" style="display: none;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+    <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
+    <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
+    <h5 class="option" style="margin: auto;">Primary Insurance</h5>
+    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+    </div>
+  </nav>
+  <div class="container">
+    <i class="fas fa-plus"></i>  <h4 class="content-body" style="display: inline-flex;">Add a credit card</h4>
+  </div>
+</section>
+
+<section class="Account" id="modal" style="background-color: grey; display: none;" > 
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+    <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
+    <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
+    <h5 class="option" style="margin: auto;">Account</h5>
+    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+    </div>
+  </nav>
+<div class="holder" >
+<h6>PROFILE</h6>
+  <div class="pro row">
+    <h6>First Name</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Last Name</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Gender</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Date Of Birth</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Change Password</h6><span class="account-span"></span>
+  </div>
+</div>
+
+
+<div class="holder">
+  <h6>CONTACT INFORMATION</h6>
+  <div class="pro row">
+    <h6>Phone Number</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Address</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Emergency Contact</h6><span class="account-span"></span>
+  </div>
+  <div class="pro row">
+    <h6>Email</h6><span class="account-span"></span>
+  </div>
+</div>
+</section>
+
+<section class="switchPatient" id="modal">
+
+</section>
 
   <script>
     function dynamic(event){
@@ -331,6 +604,31 @@
 
     function hideMessages(){
       document.getElementsByClassName("Messages")[0].style.display = "none";
+
+    }
+
+    function showProfile(){
+      document.getElementsByClassName("me")[0].style.display = "block";
+
+    }
+
+    function showInsurance(){
+      document.getElementsByClassName("insurance")[0].style.display = "block";
+
+    }
+
+    function hideInsurance(){
+      document.getElementsByClassName("insurance")[0].style.display = "none";
+
+    }
+
+
+    function showBilling(){
+      document.getElementsByClassName("billing")[0].style.display = "block";
+
+    } 
+    function hideBills(){
+      document.getElementsByClassName("billing")[0].style.display = "none";
 
     }
 

@@ -146,6 +146,47 @@ background-color: #f5efef;
     /* padding: 10px 30px 10px 30px ; */
 }
 
+
+.me{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px; */
+    /* padding: 10px 30px 10px 30px ; */
+}
+
+.insurance{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#modal{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pro{
+    border-bottom: 1px solid rgb(134, 134, 134);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    background-color: white;
+}
+
+
 .send{
     border-bottom: 1px solid rgb(134, 134, 134);
     padding-top: 15px;
@@ -165,7 +206,13 @@ background-color: #f5efef;
     margin-right: 0;
 }
 
+.content-head{
+    font-size: large;
+}
 
+.content-body{
+    color: grey;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   
@@ -243,5 +290,66 @@ background-color: #f5efef;
     background-color: turquoise ;
     padding: 10px;
     font-weight: bold;
+    /* border-bottom: 1px solid blue; */
 
 }
+
+.person{
+
+}
+
+.profile-support{
+    font-size: large;
+    font-weight: lighter;
+}
+
+.self-card{
+    background-color: green;
+    width: 30%;
+    margin: auto;
+    vertical-align: middle;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid turquoise;
+    background-color: white;
+    margin-top: 10%;
+}
+
+.self-button{
+        background-color: blue;
+        /* border: none; */
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+    }
+
+    .toogles{
+        /* margin-right:25%; */
+        width: 30%;
+        text-align: center;
+        padding-left:auto;
+        padding-top: 30px;
+    }
+
+    .toogle-support{
+        color: black;
+        border-bottom: 0px solid green;
+
+    }
+
+    .account-span{
+        text-align: right;
+        margin-right: auto;
+    }
+
+    .holder{
+        margin-top: 5%;
+    }
