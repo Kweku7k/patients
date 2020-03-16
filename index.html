@@ -394,21 +394,21 @@
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
         <i class="fas fa-money-check-alt"></i>
       <!-- </div> -->
-      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Payment</h4>
+      <h4 class="profile-support" style="display: inline-flex; padding-left: 30px;" onclick="showPayment()">Payment</h4>
     </div>
     </div>
 
-    <a href="dynamic.html">
+    <!-- <a href="dynamic.html"> -->
     <div class="pro row">
       <div class="wrapper">
       <!-- <div class="image" style="width: 10%;"> -->
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png"> -->
         <i class="fas fa-user-circle"></i>
       <!-- </div> -->
-      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Account</h4>
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" onclick="showAccount()" >Account</h4>
     </div>
     </div> 
-    </a>
+    <!-- </a> -->
 
     <div class="pro row">
       <div class="wrapper">
@@ -417,7 +417,7 @@
       <!-- </div> -->
       <i class="fas fa-user-injured"></i>
 
-      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Switch patient</h4>
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" onclick="showSwitchPatient()">Switch patient</h4>
     </div>
     </div> 
 
@@ -518,14 +518,14 @@
 
 </section>
 
-<section class=Payment" id="modal" style="display: none;">
+<section class="Payment" style="display: none;">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
     <!-- <span class="navbar-toggler-icon"></span> -->
     <!-- </button> -->
     <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
-    <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
+    <i onclick="hidePayment()" class="fas fa-chevron-left fa-2x"></i>
     <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
     <h5 class="option" style="margin: auto;">Primary Insurance</h5>
     <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
@@ -543,7 +543,7 @@
     <!-- <span class="navbar-toggler-icon"></span> -->
     <!-- </button> -->
     <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
-    <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
+    <i onclick="hideAccount()" class="fas fa-chevron-left fa-2x"></i>
     <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
     <h5 class="option" style="margin: auto;">Account</h5>
     <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
@@ -586,7 +586,13 @@
 </div>
 </section>
 
-<section class="switchPatient" id="modal">
+<section class="switchPatient" style="background-color: rgba(0, 0, 0, 0.274); display: none;" >
+<div class="dialogue">
+<h4 class="main-text">Switch Patient</h4>
+<button class="iButton">Add a family Member</button>
+<button class="iButton" onclick="hideSwitchPatient()">Cancel</button>
+</div>
+  </section>
 
 </section>
 
@@ -621,7 +627,27 @@
       document.getElementsByClassName("insurance")[0].style.display = "none";
 
     }
+    
+    function showPayment(){
+      document.getElementsByClassName("Payment")[0].style.display = "block";
+    } 
 
+    function hidePayment(){
+      document.getElementsByClassName("Payment")[0].style.display = "none";
+
+    }
+
+    function showAccount(){
+      document.getElementsByClassName("Account")[0].style.display = "block";
+    }
+
+
+    function hideAccount(){
+      document.getElementsByClassName("Account")[0].style.display = "none";
+    }
+    // function showPayment(){
+    //   document.getElementsByClassName("Payment")[0].style.display = "block";
+    // } 
 
     function showBilling(){
       document.getElementsByClassName("billing")[0].style.display = "block";
@@ -631,6 +657,14 @@
       document.getElementsByClassName("billing")[0].style.display = "none";
 
     }
+
+    function showSwitchPatient(){
+      document.getElementsByClassName("switchPatient")[0].style.display = "block";
+    } 
+
+    function hideSwitchPatient(){
+      document.getElementsByClassName("switchPatient")[0].style.display = "none";
+    } 
 
     function showMessages(){
       // button = event.target;

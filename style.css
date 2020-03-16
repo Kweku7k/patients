@@ -178,6 +178,24 @@ background-color: #f5efef;
     right: 0;
 }
 
+.Payment{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+
+.switchPatient{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .pro{
     border-bottom: 1px solid rgb(134, 134, 134);
     padding-top: 15px;
@@ -352,4 +370,36 @@ background-color: #f5efef;
 
     .holder{
         margin-top: 5%;
+    }
+
+    .dialogue{
+        width: 20%;
+        background-color: white;
+        /* border-radius: 5px;       */
+        margin: auto;
+        margin-top: 20%;
+        
+        /* padding: 30px; */
+    }
+    .main-text{
+        margin: auto;
+        font-size: large;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .iButton{
+        background-color: white;
+        /* border: 1px solid turquoise; */
+        border: none;
+        color: turquoise;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        /* border-radius: 26px; */
+        width: 100%;
+        border-top: 1px solid rgb(212, 212, 212);
     }
