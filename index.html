@@ -341,11 +341,11 @@
       <img src="Serenity logo.png" style="margin-right: auto;">
     
       <ul class="nav justify-content-end">
-        <li class="nav-item" onclick="hideMessages()">
+        <li class="nav-item" onclick="hideProfileMessages()">
           <a class="nav-link disabled" href="#">My Health</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: #212529;" href="#">Messages</a>
+        <li class="nav-item" onclick="hideProfile()">
+          <a class="nav-link" style="color: #212529;" href="#" >Messages</a>
         </li>
         <li>
           <!-- <a class="nav-link active"><div class="profile">NA</div></a>  -->
@@ -623,6 +623,17 @@
       document.getElementsByClassName("me")[0].style.display = "block";
 
     }
+
+    function hideProfile(){
+      document.getElementsByClassName("me")[0].style.display = "none";
+      document.getElementsByClassName("Messages")[0].style.display = "block";
+    }
+
+    function hideProfileMessages(){
+      document.getElementsByClassName("me")[0].style.display = "none";
+      document.getElementsByClassName("Messages")[0].style.display = "none";
+    }
+
 
     function showInsurance(){
       document.getElementsByClassName("insurance")[0].style.display = "block";
