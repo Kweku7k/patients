@@ -286,9 +286,9 @@ background-color: #f5efef;
     text-decoration: none;
   }
 
-/* #auth-yes{
-    display: block;
-} */
+#auth-yes{
+    padding-bottom: 0;
+}
   
 
 
@@ -403,3 +403,33 @@ background-color: #f5efef;
         width: 100%;
         border-top: 1px solid rgb(212, 212, 212);
     }
+
+    .avatar-circle {
+        width: 50px;
+        height: 50px;
+        background-color: turquoise;
+        text-align: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
+
+      #avatar-nav{
+          width: 40px;
+          height: 40px;
+      }
+
+      .initials {
+        position: relative;
+        top: 0px; /* 25% of parent */
+        font-size: 19px; /* 50% of parent */
+        line-height: 50px; /* 50% of parent */
+        color: #fff;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+      }
+
+      #initials-nav{
+          font-size: 15px;
+          line-height: 40px;
+      }
