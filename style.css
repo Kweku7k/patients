@@ -232,40 +232,6 @@ background-color: #f5efef;
     color: grey;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
-    .section-1{
-        margin: 0;
-        padding: 0;
-        margin-top: 30%;
-    }
-
-    .health-section{
-        margin: 0;
-        padding: 0; 
-        margin-top: 10%;
-    }
-    .topic{
-        padding-top: 10px;
-        padding-left: 10%;
-    }
-    .coupe{
-        padding-top: 0;
-    }
-    .topic{
-        padding-bottom: 0;
-    }
-    #virtual{
-        margin-top: 10%;
-    }
-    #health{
-        font-size: large;
-        font-weight: bolder;
-    }
-    #health-cards{
-        margin-bottom: 30px;
-    }
-  }
 
   .hospital{
       width: 100%;
@@ -433,3 +399,53 @@ background-color: #f5efef;
           font-size: 15px;
           line-height: 40px;
       }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .section-1{
+        margin: 0;
+        padding: 0;
+        margin-top: 30%;
+    }
+    
+    .self-card{
+        width: 70%;
+    }
+
+    .health-section{
+        margin: 0;
+        padding: 0; 
+        margin-top: 10%;
+    }
+    .topic{
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+    .coupe{
+        padding-top: 0;
+    }
+    .topic{
+        padding-bottom: 0;
+    }
+    #virtual{
+        margin-top: 10%;
+    }
+    #health{
+        font-size: large;
+        font-weight: bolder;
+    }
+    #health-cards{
+        margin-bottom: 30px;
+    }
+    .dialogue{
+        width: 70%;
+        margin-top: 50%;
+    }
+    .picholder{
+        width: 10%;
+    }
+    .content{
+        padding-left: 5%;
+    }
+  }
