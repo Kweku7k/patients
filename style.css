@@ -413,6 +413,37 @@ background-color: #f5efef;
           text-align: center;
       }
 
+      .bottom{
+          position: absolute;
+          bottom: 0;
+          left: 45%;
+          text-align: center;
+
+      }
+      .username{
+        width: 100%;
+        background-color: turquoise;
+        border: 1px solid grey;
+        min-height:30px ;
+        border-radius: 10px;
+        text-align: center;    
+      }
+
+      .login{
+          position: absolute;
+          bottom: 0;
+          left: 0%;
+          right: 0%;
+          width: 100%;
+          background-color: turquoise;
+          height:40px ;
+          color: white;
+          /* border-radius: 20px; */
+        }
+
+        /* #login{
+            margin:50px
+        } */
 
 @media (min-width: 320px) and (max-width: 480px) {
   

@@ -16,19 +16,19 @@
 </head>
 
 <body style="background-color:#f9f9f9">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-no">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="#"> <button class="button" id="login">Login</button></a>
+    <a href="#"> <button class="button" id="login" onclick="showtheLogin()">Login</button></a>
     <img src="Serenity logo.png" style="margin: auto;">
     <!-- <h5 style="margin: auto;">Senseble Health</h5> -->
     <button class="button" style="margin-right: 0;" id="signup">Signup</button>
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes" style="border-bottom:1px solid rgb(175, 175, 175); padding-bottom: 0;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-no" style="border-bottom:1px solid rgb(175, 175, 175); padding-bottom: 0;">
 
     <img src="Serenity logo.png" style="margin-right: auto;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -407,34 +407,34 @@
     </div>
     </div>
 
-    <div class="pro row">
+    <div class="pro row" onclick="showBilling()">
       <div class="wrapper">
       <!-- <div class="image" style="width: 10%;"> -->
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png"/ style="padding-left: 30px;">  -->
         <i class="fas fa-file-invoice-dollar"></i>
       <!-- </div> -->
-      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" onclick="showBilling()">Bills</h4>
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" >Bills</h4>
     </div>
     </div>
 
-    <div class="pro row">
+    <div class="pro row" onclick="showPayment()">
       <div class="wrapper">
       <!-- <div class="image" style="width: 10%;"> -->
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
         <i class="fas fa-money-check-alt"></i>
       <!-- </div> -->
-      <h4 class="profile-support" style="display: inline-flex; padding-left: 30px;" onclick="showPayment()">Payment</h4>
+      <h4 class="profile-support" style="display: inline-flex; padding-left: 30px;" >Payment</h4>
     </div>
     </div>
 
     <!-- <a href="dynamic.html"> -->
-    <div class="pro row">
+    <div class="pro row" onclick="showAccount()">
       <div class="wrapper">
       <!-- <div class="image" style="width: 10%;"> -->
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png"> -->
         <i class="fas fa-user-circle"></i>
       <!-- </div> -->
-      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" onclick="showAccount()" >Account</h4>
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;"  >Account</h4>
     </div>
     </div> 
     <!-- </a> -->
@@ -444,9 +444,9 @@
       <!-- <div class="image" style="width: 10%;"> -->
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
       <!-- </div> -->
-      <i class="fas fa-user-injured"></i>
+      <i class="fas fa-user-injured"  onclick="showSwitchPatient()"s></i>
 
-      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;" onclick="showSwitchPatient()">Switch patient</h4>
+      <h4 class="profile-support"style="display: inline-flex; padding-left: 30px;">Switch patient</h4>
     </div>
     </div> 
 
@@ -515,7 +515,7 @@
   <button class="self-button" onclick="showInsuranceInformation()">Update your insurance</button>
 </section>
 
-<section class="InsuranceInformation" id="modal" style="display: none;"
+<section class="InsuranceInformation" id="modal" style="display: none;">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
     <!-- <h5 class="option" style="margin: auto;">Insurance</h5> -->
@@ -526,8 +526,55 @@
     <h6>Lets talk insurance</h6>
     <h6>Don’t worry, we’ll make it quick. Just enter your insurance info and we’ll work with your insurance provider to get all the necessary details.</h6>
   </div>
-  <h6>Enter insurance info</h6>
-  <h6>Sign up without insurance</h6>
+  <div class="bottom">
+
+    <h6 style="color: gray;">Enter insurance info</h6>
+    <br>
+    <h6 style="color: gray;" onclick="FillInsurance()">Sign up without insurance</h6>
+    <br>
+    <h6 style="display: inline-flex;" ><a>One </a>| <a> One </a>|<a> One</a></h6>
+  </div>
+</section>
+
+<section class="insuranceForm" style="display: none;" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
+    <i onclick="hideInsurance()" class="fas fa-chevron-left fa-2x"></i>
+    <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
+    <h5 class="option" style="margin: auto;">Primary Insurance</h5>
+    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+    </div>
+  </nav>
+
+  <div class="self-card">
+    <h4>Self Pay</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <h6>First Name</h6>
+        <h5>Nana Kweku</h5>
+        <br>
+        <h6>Date Of Birth</h6>
+        <h5>12/20/00</h5>
+        <br>
+        <h6>Plan Type</h6>
+        <h4>Other</h4>
+      </div>
+
+      <div class="col-md-6">
+        <h6>First Name</h6>
+        <h5>Nana Kweku</h5>
+        <br>
+        <h6>Date Of Birth</h6>
+        <h5>12/20/00</h5>
+      </div>
+    </div>
+  </div>
+
+  <button class="self-button" onclick="showInsuranceInformation()">Update your insurance</button>
 </section>
 
 <section class="billing" id="modal" style="background-color: rgb(230, 230, 230); display:none;" >
@@ -566,6 +613,37 @@
 
 
 </section>
+
+<section class="Login" id="modal" style="display: none;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <i onclick="hidetheLogin()" class="fas fa-times fa-2x"></i>  <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
+    </div>
+  </nav>
+    <h4 style="text-align: center; padding-top:30px ;">Login</h4>
+  <div class="container">
+  <form>
+    <div class="form-group">
+      <!-- <label for="exampleInputEmail1">Email address</label> -->
+      <input type="email" class="form-control" id="login" aria-describedby="emailHelp" placeholder="Enter email">
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <!-- <label for="exampleInputPassword1">Password</label> -->
+      <input type="password" class="form-control" id="login" placeholder="Password">
+    </div>
+    <!-- <div class="form-check"> -->
+      <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+      <!-- <label class="form-check-label" for="exampleCheck1">Remember me</label> -->
+      <a href="#"><h6 style="text-align:center; margin:auto;">Forgot Password</h6></a>
+      <br>
+      <a href="#"><h6 style="text-align:center; margin:auto;">Signup</h6></a>
+
+    <!-- </div> -->
+    <button type="submit" class="login">Submit</button>
+  </form>
+  </div>
+</section>
+
 
 <section class="Payment" style="display: none;">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -667,6 +745,18 @@
 
     }
 
+
+    function showtheLogin(){
+      document.getElementsByClassName("Login")[0].style.display = "block";
+
+    }
+
+
+    function hidetheLogin(){
+      document.getElementsByClassName("Login")[0].style.display = "none";
+
+    }
+
     function hideProfile(){
       document.getElementsByClassName("me")[0].style.display = "none";
       document.getElementsByClassName("Messages")[0].style.display = "block";
@@ -679,8 +769,15 @@
 
 
     function showInsurance(){
-      document.getElementsByClassName("insurance")[0].style.display = "block";
+      document.getElementsByClassName("InsuranceInformation")[0].style.display = "block";
 
+    }
+
+    function FillInsurance(){
+      document.getElementsByClassName("InsuranceInformation")[0].style.display = "none";
+
+      document.getElementsByClassName("insuranceForm")[0].style.display = "block";
+      
     }
 
     function hideInsurance(){
@@ -709,6 +806,11 @@
     //   document.getElementsByClassName("Payment")[0].style.display = "block";
     // } 
 
+    function showLogin(){
+      document.getElementsByClassName("Account")[0].style.display = "none";
+
+    }
+
     function showBilling(){
       document.getElementsByClassName("billing")[0].style.display = "block";
 
@@ -725,6 +827,13 @@
     function hideSwitchPatient(){
       document.getElementsByClassName("switchPatient")[0].style.display = "none";
     } 
+
+    function showInsuranceInformation(){
+      document.getElementsByClassName("InsuranceInformation")[0].style.display = "none";
+
+      document.getElementsByClassName("InsuranceInformation")[0].style.display = "block";
+
+    }
 
     function showMessages(){
       // button = event.target;
