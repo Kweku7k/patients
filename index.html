@@ -37,8 +37,8 @@
     <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
     <!-- <h5 style="margin: auto;">Senseble Health</h5> -->
     <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="nav justify-content-end">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right:0px">
+    <ul class="nav justify-content-end" style="margin-left: auto;">
       <li class="nav-item">
         <a class="nav-link active" href="#">My Health</a>
       </li>
@@ -299,7 +299,7 @@
       </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-end" style="margin-left:auto;">
         <li class="nav-item" onclick="hideMessages()">
           <a class="nav-link disabled" href="#">My Health</a>
         </li>
@@ -319,29 +319,33 @@
 
 <div class="send row">
   <div class="picholder" style="text-align: center;">
-<img class="pic" src="user.png" width="100%">
+<img class="pic" src="user.png">
   </div>
-  <div class="content" style="width: 90%;">
+  <div class="content">
 <h4 class="content-head">CoronaVirus Concerns</h4>
 <h6 class="content-body">Carbon Bot: I've created a case to handle your Coronavirus Concerns, and notified your team.</h6>
   </div>
-  <!-- <div class="time">
-    <h5>10:00</h5>
-  </div> -->
 </div>
 
 <div class="send row">
   <div class="picholder" style="text-align: center;">
+<img class="pic" src="user.png">
+  </div>
+  <div class="content">
+<h4 class="content-head">CoronaVirus Concerns</h4>
+<h6 class="content-body">Carbon Bot: I've created a case to handle your Coronavirus Concerns, and notified your team.</h6>
+  </div>
+</div>
+
+<!-- <div class="send row">
+  <div class="picholder" style="text-align: center;">
 <img class="pic" src="user.png" width="100%">
   </div>
-  <div class="content" style="width: 90%;">
+  <div class="content" style="width: 80%;">
 <h4 class="content-head">Prevention & Wellness</h4>
 <h6 class="content-body">Carbon Bot:Welcome to Carbon!</h6>
   </div>
-  <!-- <div class="time">
-    <h5>10:00</h5>
-  </div> -->
-</div>
+</div> -->
 
 
 
@@ -358,7 +362,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
        <div class="collapse navbar-collapse" id="navbarSupportedContent">  
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-end" style="margin-left: auto;">
         <li class="nav-item" onclick="hideProfileMessages()">
           <a class="nav-link disabled" href="#">My Health</a>
         </li>
@@ -508,20 +512,28 @@
     </div>
   </div>
 
-  <button class="self-button">Update your insurance</button>
+  <button class="self-button" onclick="showInsuranceInformation()">Update your insurance</button>
+</section>
+
+<section class="InsuranceInformation" id="modal" style="display: none;"
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
+    <!-- <h5 class="option" style="margin: auto;">Insurance</h5> -->
+    </div>
+  </nav>
+  <div class="middle">
+    <img src="https://img.icons8.com/cotton/50/000000/bank-card-back-side.png"/>
+    <h6>Lets talk insurance</h6>
+    <h6>Don’t worry, we’ll make it quick. Just enter your insurance info and we’ll work with your insurance provider to get all the necessary details.</h6>
+  </div>
+  <h6>Enter insurance info</h6>
+  <h6>Sign up without insurance</h6>
 </section>
 
 <section class="billing" id="modal" style="background-color: rgb(230, 230, 230); display:none;" >
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
-
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
-    <!-- <span class="navbar-toggler-icon"></span> -->
-    <!-- </button> -->
-    <!-- <a href="#"> <button class="button" id="login">Login</button></a> -->
     <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
-    <!-- <img src="Serenity logo.png" style="margin: auto;"> -->
     <h5 class="option" style="margin: auto;">Bills</h5>
-    <!-- <button class="button" style="margin-right: 0;" id="signup">Signup</button> -->
     </div>
   </nav>
    <!-- <div class="container" > -->

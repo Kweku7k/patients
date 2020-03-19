@@ -215,6 +215,11 @@ background-color: #f5efef;
 
 .pic{
     border-radius: 50%;
+    width: 40%;
+}
+
+.picholder{
+    width: 10%;
 }
 .content{
     padding-left:50px;
@@ -400,6 +405,14 @@ background-color: #f5efef;
           line-height: 40px;
       }
 
+      .middle{
+          position: absolute;
+          left: 20%;
+          top: 30%;
+          width: 60%;
+          text-align: center;
+      }
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   
@@ -443,9 +456,10 @@ background-color: #f5efef;
         margin-top: 50%;
     }
     .picholder{
-        width: 10%;
+        width: 20%;
     }
     .content{
         padding-left: 5%;
+        width: 70%;
     }
   }
