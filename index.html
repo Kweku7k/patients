@@ -16,7 +16,7 @@
 </head>
 
 <body style="background-color:#f9f9f9">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-no">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-no" style="border-bottom:1px solid rgb(175, 175, 175); padding-bottom: 0;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" id="auth-yes" style="border-bottom:1px solid rgb(175, 175, 175); padding-bottom: 0;">
 
     <img src="Serenity logo.png" style="margin-right: auto;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -397,7 +397,7 @@
     </div> 
 
 
-    <div class="pro row" onclick="showInsurance()">
+    <div class="pro row" onclick="FillInsurance()">
       <div class="wrapper">
       <!-- <div class="image" style="width: 10%;"> -->
         <!-- <img src="https://img.icons8.com/ios-filled/36/000000/insurance-agent.png">  -->
@@ -518,7 +518,6 @@
 <section class="InsuranceInformation" id="modal" style="display: none;">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <i onclick="hideBills()" class="fas fa-chevron-left fa-2x"></i>
-    <!-- <h5 class="option" style="margin: auto;">Insurance</h5> -->
     </div>
   </nav>
   <div class="middle">
@@ -536,7 +535,7 @@
   </div>
 </section>
 
-<section class="insuranceForm" style="display: none;" >
+<section class="insuranceForm" id="modal" style="display: none;" >
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
@@ -829,10 +828,7 @@
     } 
 
     function showInsuranceInformation(){
-      document.getElementsByClassName("InsuranceInformation")[0].style.display = "none";
-
       document.getElementsByClassName("InsuranceInformation")[0].style.display = "block";
-
     }
 
     function showMessages(){
