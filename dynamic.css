@@ -25,6 +25,11 @@
     border-radius: 26px;
   }
 
+  #signup{
+      background-color: black;
+      color: white;
+  }
+
 
   .hospital{
     width: 100%;
@@ -145,6 +150,7 @@ padding-top: -5;
 }
 .body{
 color: black;
+font-size: large;
 }
 
 .footer{
@@ -186,3 +192,11 @@ color: black;
     margin-right: 30px;
     text-align: center;
 }
+
+.locations{
+border-radius: 20px;
+border: 1px solid grey;
+width: 30%;
+height: 80px;
+}
+
